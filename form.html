@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our First Form</title>
+</head>
+<body>
+	<p>
+		Fill This Form
+	</p>
+	<!-- THE CONTACT FORM IS HERE -->
+                <h2>Contact me!</h2>
+                <form action="action.php" method=POST><input type="hidden" name="csrfmiddlewaretoken" value="vLleebZfvj8zFmhuAEYmpQy6LqU3vio1uGeetFiA433Lq3yr15GeIU5NGs8USZKb">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter your Name" name="name">
+                    </div>
+                    <br> 
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="cemail" placeholder="Enter your Email" name="email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number (with country code)</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your Phone Number"
+                            name="phone">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="description">Describe what you want to contact me for here</label>
+                        <textarea type="text" class="form-control" id="message" placeholder="Your message" name="message"></textarea>
+                    </div>
+                   <br>
+                    <button type="submit" class="btn btn-danger mt-2">Submit</button>
+                </form>
+
+</body>
+</html>
